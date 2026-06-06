@@ -1,0 +1,57 @@
+<!-- Designed and implemented a Feedback Form using HTML with:
+- Name and Email input fields
+- Message textarea
+- Rating section (1–5 radio buttons)
+- Submit button
+
+The layout follows the provided mockup and ensures a simple, user-friendly feedback collection form. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    
+<form action="action.php">
+    <div>
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Write your name" name="name" id="name">
+    </div>
+    <br>
+    <div>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Write your email" name="email" id="email">
+    </div>
+    <br>
+    <div>
+        <label for="msg">Message:</label>
+        <br>
+        <textarea name="msg" id="msg" rows="5" cols="40"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="rate_us">Rate us our of 5:</label>
+        <br>
+        <input type="radio" name="rate_us" id="1" value="1">
+        <label for="1">1</label>
+        <br>
+        <input type="radio" name="rate_us" id="1" value="2">
+        <label for="2">2</label>
+        <br>
+        <input type="radio" name="rate_us" id="2" value="3">
+        <label for="3">3</label>
+        <br>
+        <input type="radio" name="rate_us" id="3" value="4">
+        <label for="4">4</label>
+        <br>
+        <input type="radio" name="rate_us" id="4" value="5">
+        <label for="5">5</label>
+    </div>
+    <br>
+    <button type="submit">Send your message!</button>
+</form>    
+</body>
+</html>
